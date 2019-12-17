@@ -1,0 +1,56 @@
+body{
+  --altura: 100vh;
+  --anchura: 100vw;
+  margin: 0;
+  padding: 0;
+  background: url(../img/bg2.jpg) no-repeat center top;
+  background-size: var(--anchura) var(--altura);
+  font-family: sans-serif;
+  width: var(--anchura);
+  height: var(--altura);
+}
+
+.rgstr{
+  width: calc(var(--anchura)*0.9);
+  height: calc(var(--altura)*0.9);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.rgstr p{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;  
+}
+
+.rgstr label{
+  margin: 0;
+  padding: 0 0 20px;
+  font-size: 50px;
+  font-weight: bold;
+  display: block;
+}
+
+.rgstr input[type="text"],.rgstr input[type="password"]{
+  width: 100%;
+  height: 75px;
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.rgstr input[type="submit"],.rgstr input[type="reset"],.rgstr input[type="button"]{
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 40px;
+  font-weight: bold;
+  height: 100px;
+  background: #fff;
+  color: black;
+  border-radius: 20px;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
